@@ -52,7 +52,7 @@ namespace Operatorok
 
 			//6.feladat
 
-			//7.feladat
+			//7.feladat (kell hozzá a 6 os)
 
 			//8.feladat
 
