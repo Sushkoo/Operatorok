@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Operatorok
 {
@@ -42,8 +43,29 @@ namespace Operatorok
 
 			//5.feladat
 
+			Console.WriteLine($"mod ->{lista.Count(x => x.OOperator == "mod")}db");
+			Console.WriteLine($"/ ->{lista.Count(x => x.OOperator == "/")}db");
+			Console.WriteLine($"div ->{lista.Count(x => x.OOperator == "div")}db");
+			Console.WriteLine($"- ->{lista.Count(x => x.OOperator == "-")}db");
+			Console.WriteLine($"* ->{lista.Count(x => x.OOperator == "*")}db");
+			Console.WriteLine($"+ ->{lista.Count(x => x.OOperator == "+")}db");
 
-			
+			//6.feladat
+
+			//7.feladat
+
+			//8.feladat
+
+			string seged = "";
+
+			StreamWriter sw = new StreamWriter("eredmenyek.txt");
+				foreach( var x in lista )
+				{
+					seged=x.ElsoOperandus+x.OOperator+x.MasodikOperandus;
+					sw.WriteLine(seged);
+				}
+				sw.Close();
+
 		}
 	}
 }
