@@ -10,8 +10,17 @@ namespace Operatorok
 	{
 		int elsoOperandus;
 		string oOperator;
-		int kifejezes;
+		int masodikOperandus;
 
+		public Operatorok(int elsoOperandus, string oOperator, int masodikOperandus)
+		{
+			this.elsoOperandus = elsoOperandus;
+			this.oOperator = oOperator;
+			this.masodikOperandus = masodikOperandus;
+		}
 
+		public int ElsoOperandus { get => elsoOperandus; }
+		public string OOperator { get => oOperator; }
+		public int MasodikOperandus { get => masodikOperandus; }
 	}
 }
